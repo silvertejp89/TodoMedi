@@ -71,6 +71,10 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.doneText {
+  text-decoration: line-through;
+}
+
 .read-the-docs {
   color: #888;
 }

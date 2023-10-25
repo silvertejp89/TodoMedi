@@ -39,16 +39,25 @@ function createCard(e) {
 
 //Skapa cards för tasks
 function createHTML(todoList) {
+  inputText.value = "";
   const container = document.querySelector(".container");
   container.innerHTML = "";
   for (let i = 0; i < todoList.length; i++) {
     const card = document.createElement("article");
     card.classList.add("card");
     const text = document.createElement("h3");
+
     let checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
-    checkbox.classList.add("checkbox");
-    // checkbox.addEventListener("change", isItDone);
+    // checkbox.setAttribute("id", ${todoList[i].description}));
+
+    // Eventlistener som ändrar done till motsatt value varje gång man klickar i checkbox.
+    checkbox.addEventListener("change", () => {
+      todoList[i].done = !todoList[i].done;
+      console.log(todoList[i]);
+      createHTML(todoList);
+    });
+
     const removeBtn = document.createElement("button");
     removeBtn.innerHTML = "Ta bort";
     removeBtn.addEventListener("click", () => {
@@ -60,6 +69,11 @@ function createHTML(todoList) {
     container.appendChild(card);
 
     text.innerHTML = todoList[i].description;
+
+    if (todoList[i].done === true) {
+      checkbox.checked = true;
+      text.classList.add("doneText");
+    }
   }
 }
 
@@ -68,8 +82,8 @@ function removeTask(i) {
   createHTML(todoList);
 }
 
-// function isItDone() {
-//   //ändra done till motsatt värde.
+// function isItDone(done) {
+//   console.log(done);
 // }
 
 createHTML(todoList);
