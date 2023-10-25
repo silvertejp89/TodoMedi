@@ -25,9 +25,9 @@ todoList.push(task3);
 
 //Skapa tasks till array
 const submitBtn = document.querySelector("#submitBtn");
-submitBtn.addEventListener("click", createCard);
+submitBtn.addEventListener("click", createTask);
 
-function createCard(e) {
+function createTask(e) {
   e.preventDefault();
   const inputText = document.querySelector("#inputText");
   console.log(inputText.value);
@@ -37,7 +37,7 @@ function createCard(e) {
   createHTML(todoList);
 }
 
-//Skapa cards för tasks
+//Skapa cards(html)för tasks
 function createHTML(todoList) {
   inputText.value = "";
   const container = document.querySelector(".container");
@@ -49,7 +49,6 @@ function createHTML(todoList) {
 
     let checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
-    // checkbox.setAttribute("id", ${todoList[i].description}));
 
     // Eventlistener som ändrar done till motsatt value varje gång man klickar i checkbox.
     checkbox.addEventListener("change", () => {
@@ -63,6 +62,7 @@ function createHTML(todoList) {
     removeBtn.addEventListener("click", () => {
       removeTask(i);
     });
+
     card.appendChild(checkbox);
     card.appendChild(text);
     card.appendChild(removeBtn);
@@ -82,8 +82,21 @@ function removeTask(i) {
   createHTML(todoList);
 }
 
-// function isItDone(done) {
-//   console.log(done);
-// }
+// Sortera array alfabetiskt:
+const sortBtn = document.querySelector(".sortBtn");
+sortBtn.addEventListener("click", () => {
+  todoList.sort(function (a, b) {
+    let x = a.description.toLowerCase();
+    let y = b.description.toLowerCase();
+    if (x < y) {
+      return -1;
+    }
+    if (x > y) {
+      return 1;
+    }
+    return 0;
+  });
+  createHTML(todoList);
+});
 
 createHTML(todoList);
