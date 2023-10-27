@@ -9,6 +9,7 @@ todoList = JSON.parse(listFromLocalStorage);
 
 //Button for createTask
 const submitBtn = document.querySelector("#submitBtn");
+submitBtn.classList.add("submitBtn");
 submitBtn.addEventListener("click", createTask);
 
 //Button for sorting alphabetically
@@ -17,3 +18,5 @@ sortBtn.addEventListener("click", sortAlphabetically);
 
 //Create Html for list of objects
 createHTML(todoList);
+
+console.log("todos: ", todoList);
