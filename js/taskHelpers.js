@@ -2,13 +2,13 @@ import { todoList } from "../js/main";
 import { Task } from "../models/Task";
 import { createHTML } from "./HtmlHelper";
 
-//CHECKBOX
+//Checkbox function
 export function changeCheck(i) {
   todoList[i].done = !todoList[i].done;
   createHTML(todoList);
 }
 
-//CREATE
+//Create function
 export function createTask(e) {
   e.preventDefault();
   const inputText = document.querySelector("#inputText");
@@ -17,13 +17,13 @@ export function createTask(e) {
   createHTML(todoList);
 }
 
-//REMOVE
+//Remove function
 export function removeTask(i) {
   todoList.splice(i, 1);
   createHTML(todoList);
 }
 
-//SORT
+//Sort function
 export function sortAlphabetically() {
   todoList.sort(function (a, b) {
     let x = a.description.toLowerCase();

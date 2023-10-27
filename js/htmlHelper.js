@@ -11,15 +11,19 @@ export function createHTML(todoList) {
     card.classList.add("card");
     const text = document.createElement("h3");
 
+    //Checkbox (connected to changeCheck)
     let checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
-
-    //Checkbox (Eventlistener som ändrar done till motsatt value varje gång man klickar i checkbox).
     checkbox.addEventListener("change", () => {
       changeCheck(i);
     });
 
-    //Ta bort-knapp
+    if (todoList[i].done === true) {
+      checkbox.checked = true;
+      text.classList.add("doneText");
+    }
+
+    //Button for removeTask
     const removeBtn = document.createElement("button");
     removeBtn.innerHTML = "Ta bort";
     removeBtn.addEventListener("click", () => {
@@ -32,10 +36,5 @@ export function createHTML(todoList) {
     container.appendChild(card);
 
     text.innerHTML = todoList[i].description;
-
-    if (todoList[i].done === true) {
-      checkbox.checked = true;
-      text.classList.add("doneText");
-    }
   }
 }

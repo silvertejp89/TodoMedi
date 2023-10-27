@@ -2,24 +2,18 @@ import "./../scss/style.scss";
 import { createTask, sortAlphabetically } from "./taskHelpers";
 import { createHTML } from "./HtmlHelper";
 
+//Create and get list och objects from local storage
 export let todoList = [];
-
 const listFromLocalStorage = localStorage.getItem("todoList") || "[]";
-
 todoList = JSON.parse(listFromLocalStorage);
 
-// Skapar några "existerande tasks" och lägger till i todoList.
-// todoList.push(new Task("Tvätta bilen", false));
-// todoList.push(new Task("Klippa gräset", false));
-// todoList.push(new Task("Städa altanen", false));
-
-//Skapa tasks till array
+//Button for createTask
 const submitBtn = document.querySelector("#submitBtn");
 submitBtn.addEventListener("click", createTask);
 
-// Sortera array alfabetiskt:
+//Button for sorting alphabetically
 const sortBtn = document.querySelector(".sortBtn");
 sortBtn.addEventListener("click", sortAlphabetically);
 
+//Create Html for list of objects
 createHTML(todoList);
-console.log("upprepning?");
