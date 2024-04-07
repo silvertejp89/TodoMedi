@@ -3,17 +3,3 @@
   command = "vite build"
   functions = "netlify/functions"
   publish = "dist"
- 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-   Access-Control-Allow-Origin = "*"
- 
- 
-  [[headers]]
-  for = "/*"
- 
-  
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
