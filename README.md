@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/BxARPD48)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12486425&assignment_repo_type=AssignmentRepo)
 # Inlämningsuppgift Todo
 
 I denna inlämningsuppgift kommer ni att skapa er egen todo-lista.
@@ -27,3 +25,7 @@ Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp p
 - Börja med att planera ert arbete, börja inte med Visual Studio Code, även om det är lockande.
 - Gör ert bästa att inte stressa. Lättare sagt än gjort, jag vet. Men ingen mår bättre av att stressa.
 - Ha roligt, skratta när det blir fel och fortsätt att vara nyfiken :)
+
+## För att köra:
+
+npm run dev
