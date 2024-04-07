@@ -1,6 +1,7 @@
 import "./../scss/style.scss";
-import { createHTML } from "./HtmlHelper";
+// import { createHTML } from "./HtmlHelper";
 import { createTask, sortAlphabetically } from "./taskHelpers";
+import { createHTML } from "./test";
 
 //Create and get list och objects from local storage
 export let todoList = [];
