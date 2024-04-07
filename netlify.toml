@@ -3,3 +3,5 @@
   command = "vite build"
   functions = "netlify/functions"
   publish = "dist"
+
+CI= npm run build
