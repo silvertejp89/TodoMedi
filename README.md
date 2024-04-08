@@ -3,6 +3,9 @@
 I denna inlämningsuppgift kommer ni att skapa er egen todo-lista.
 Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp på skärmen i form av en lista. När uppgiften är slutförd skall användaren kunna markera uppgiften som slutförd och uppgiften skall då tas bort från listan.
 
+## Se slutresultatet:
+https://todomedi.netlify.app/
+
 ## Betyg G
 
 - Skapa en hårdkodad lista med punkter att göra (hitta på egna punkter)
@@ -26,6 +29,5 @@ Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp p
 - Gör ert bästa att inte stressa. Lättare sagt än gjort, jag vet. Men ingen mår bättre av att stressa.
 - Ha roligt, skratta när det blir fel och fortsätt att vara nyfiken :)
 
-## För att köra:
-
+## För att köra koden:
 npm run dev
