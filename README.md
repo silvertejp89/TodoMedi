@@ -1,5 +1,5 @@
 # Assignment Todo
-In this assignment, I have created my own todo list. The page can display a number of tasks to be done. These tasks appear on the screen in the form of a list. When the task is completed, the user is able to mark it as done, and the task gets removed from the list.
+In this assignment, I have created my own todo list. The page can display a number of tasks to be done, the user is able to create new tasks (objects) via a form. These tasks appear on the screen in the form of a list. When the task is completed, the user is able to mark it as done, and then back to incomplete if they wish.
 
 ## See the final result:
 https://todomedi.netlify.app/
