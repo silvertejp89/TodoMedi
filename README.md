@@ -1,33 +1,22 @@
-# Inlämningsuppgift Todo
+# Assignment Todo
+In this assignment, I have created my own todo list. The page can display a number of tasks to be done. These tasks appear on the screen in the form of a list. When the task is completed, the user is able to mark it as done, and the task gets removed from the list.
 
-I denna inlämningsuppgift kommer ni att skapa er egen todo-lista.
-Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp på skärmen i form av en lista. När uppgiften är slutförd skall användaren kunna markera uppgiften som slutförd och uppgiften skall då tas bort från listan.
-
-## Se slutresultatet:
+## See the final result:
 https://todomedi.netlify.app/
 
-## Betyg G
-
-- Skapa en hårdkodad lista med punkter att göra (hitta på egna punkter)
-- Presentera denna på skärmen, helst med lite kontroll. Detta betyder i en html-struktur t.ex. i en ul/li-lista
-- Implementera klickhändelse för att hantera borttagandet av en todo.
-- Todo tas bort från skärmen och markeras som klar i javascript-listan.
-- Implementera ett valfritt grafiskt ramverk till din todolista, t.ex. bootstrap, flex eller liknande.
-
-## Betyg VG
-
-- Alla punkter under G
-- Använda objekt för dina todos.
-- Kunna visa även klara händelser och klicka tillbaka den så att de blir oklara igen.
-- Skapa ett formulär som tillåter att en användare skapar nya todos efterhand.
-- Kunna sortera ordningen på dina todos
-
-## Allmänt
-
-- Det finns många sätt att lösa denna uppgift på. Om ni känner er osäkra på någonting, fråga hellre någon gång för mycket så att ni känner er säkra på vad ni utvecklar.
-- Börja med att planera ert arbete, börja inte med Visual Studio Code, även om det är lockande.
-- Gör ert bästa att inte stressa. Lättare sagt än gjort, jag vet. Men ingen mår bättre av att stressa.
-- Ha roligt, skratta när det blir fel och fortsätt att vara nyfiken :)
-
-## För att köra koden:
+## Run the code:
 npm run dev
+
+## Requirements Grade G
+- Create a hardcoded list with tasks to do (come up with your own tasks)
+- Present this on the screen, preferably with some control. This means in an HTML structure, for example in a ul/li list.
+- Implement a click event to handle the removal of a todo.
+- Todo is removed from the screen and marked as completed in the JavaScript list.
+- Implement an optional graphical framework for your todolist, e.g., bootstrap, flex, or similar.
+
+## Requirements Grade VG
+All points under G
+- Use objects for your todos.
+- Be able to display completed events and click back to mark them as incomplete again.
+- Create a form that allows a user to create new todos gradually.
+- Be able to sort the order of your todos.
